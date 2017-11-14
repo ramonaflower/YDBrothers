@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#dedede"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Add User"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textColor="#302e2c"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/IVAddImgUser1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/avatar" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:text="Chọn ảnh"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="User Name:"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:padding="5dp"
+            android:background="@drawable/spr_edittext_style"
+            android:id="@+id/EDAddUserName"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="2"
+            android:gravity="end"
+            android:singleLine="true"
+            android:imeOptions="actionNext" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="Address:"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/EDAddAddress"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="2"
+            android:background="@drawable/spr_edittext_style"
+            android:gravity="end"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:imeOptions="actionNext" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="Phone:"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:padding="5dp"
+            android:background="@drawable/spr_edittext_style"
+            android:id="@+id/EDAddPhone"
+            android:inputType="numberDecimal"
+            android:gravity="end"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:imeOptions="actionDone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:background="@drawable/spr_button_style"
+            android:id="@+id/btnSave"
+            android:text="Save"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:layout_width="80dp"
+            android:layout_height="40dp" />
+
+        <Button
+            android:background="@drawable/spr_button_style"
+            android:id="@+id/btnDone"
+            android:text="Done"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:layout_marginEnd="5dp"
+            android:layout_width="80dp"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
